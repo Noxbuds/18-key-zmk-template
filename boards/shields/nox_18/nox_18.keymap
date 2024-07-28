@@ -1,20 +1,52 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&sl {
+    release-after-ms: <350>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        alpha1 {
 //     | l | d | y |    | m | o | u |
 // | n | r | t | s |    | h | a | i | e |
 //         | l1|BSP|    |ENT|SPC|
             bindings = <
 
-        &kp L &kp D &kp Y   &kp M &kp O &kp U
-  &kp N &kp R &kp T &kp S   &kp H &kp A &kp I &kp E
+                &kp L      &kp D        &kp Y          &kp M      &kp O      &kp U
+&mt LGUI N &mt LALT R &mt LCTL T &mt LSHIFT S   &mt LSHIFT H &mt RCTL A &mt RALT I &mt RGUI E
 
-           &mo 1 &kp BSPC   &kp RET &kp SPACE
+           &sl 1 &kp BSPC   &sl 2 &kp SPACE
+
+            >;
+        };
+
+        alpha2 {
+//     | x | v | g |    | k | q | , |
+// | p | w | b | c |    | f | z | . | j |
+//         | l1|BSP|    |ENT|SPC|
+            bindings = <
+
+                &kp X      &kp V        &kp G          &kp K      &kp Q      &kp COMMA
+&mt LGUI P &mt LALT W &mt LCTL B &mt LSHIFT C   &mt LSHIFT F &mt RCTL Z &mt RALT DOT &mt RGUI J
+
+           &sl 1 &kp BSPC   &sl 2 &kp RET
+
+            >;
+        };
+
+        num {
+//     | 9 | ` |   |    | - | = | 8 |
+// | 7 | 5 | 3 | 1 |    | 0 | 2 | 4 | 6 |
+//         | l1|BSP|    |ENT|SPC|
+            bindings = <
+
+                 &kp N9      &kp GRAVE    &trans           &kp PLUS    &kp MINUS   &kp N8
+&mt LGUI N7 &mt LALT N5 &mt LCTL N3 &mt LSHIFT N1   &mt LSHIFT N0 &mt RCTL N2 &mt RALT N4 &mt RGUI N6
+
+           &sl 1 &kp BSPC   &kp RET &kp SPACE
 
             >;
         };
