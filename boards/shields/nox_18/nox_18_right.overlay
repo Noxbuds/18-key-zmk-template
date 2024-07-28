@@ -1,6 +1,6 @@
 #include "nox_18.dtsi"
 
-default_transform {
+&default_transform {
     col-offset = <4>;
 };
 
