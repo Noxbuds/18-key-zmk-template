@@ -79,13 +79,13 @@
         nav_sym {
 //     | ^ |   |   |    | [ | ] |RST|
 // | < | v | > |SFT|    | ' | # | ; | / |
-//         |   |   |    |   |   |
+//         |   |   |    |BT<|BT>|
             bindings = <
 
           &kp UP    &trans     &trans       &kp LBRC &kp RBRC  &bt BT_CLR
 &kp LEFT  &kp DOWN  &kp RIGHT  &kp LSHFT    &kp SQT  &kp NUHS  &kp SEMI  &kp SLASH
 
-           &trans &trans   &trans &trans
+           &trans &trans   &bt BT_PRV	&bt BT_NXT
 
             >;
         };
