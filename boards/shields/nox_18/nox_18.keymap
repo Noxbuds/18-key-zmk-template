@@ -10,11 +10,13 @@
 // | n | r | t | s |    | h | a | i | e |
 //         | l1|BSP|    |ENT|SPC|
             bindings = <
+
         &kp L &kp D &kp Y   &kp M &kp O &kp U
   &kp N &kp R &kp T &kp S   &kp H &kp A &kp I &kp E
 
-           &lt 1 &kp BSPC   &kp RET &kp SPACE
-           >;
+           &mo 1 &kp BSPC   &kp RET &kp SPACE
+
+            >;
         };
     };
 };
