@@ -23,7 +23,7 @@
 
         // right middle and ring finger
         combo_back {
-            timeout-ms = <150>;
+            timeout-ms = <25>;
             key-positions = <4 5>;
             bindings = <&kp BSPC>;
         };
