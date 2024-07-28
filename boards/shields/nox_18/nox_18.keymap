@@ -77,13 +77,13 @@
         };
 
         nav_sym {
-//     |   |   |   |    | [ | ] |RST|
-// | < | v | ^ | > |    | ' | # | ; | / |
+//     | ^ |   |   |    | [ | ] |RST|
+// | < | v | > |SFT|    | ' | # | ; | / |
 //         |   |   |    |   |   |
             bindings = <
 
-                 &trans      &trans    &trans                     &kp LBRC     &kp RBRC      &bt BT_CLR
-&mt LGUI LEFT &mt LALT DOWN &mt LCTL UP &mt LSHIFT RIGHT   &mt LSHIFT SQT &mt RCTL NUHS &mt RALT SEMI &mt RGUI SLASH
+          &kp UP    &trans     &trans       &kp LBRC &kp RBRC  &bt BT_CLR
+&kp LEFT  &kp DOWN  &kp RIGHT  &kp LSHFT    &kp SQT  &kp NUHS  &kp SEMI  &kp SLASH
 
            &trans &trans   &trans &trans
 
