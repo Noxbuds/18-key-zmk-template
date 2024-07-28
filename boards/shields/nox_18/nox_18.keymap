@@ -57,12 +57,12 @@
         };
 
         num {
-//     | 9 | ` |   |    | - | = | 8 |
+//     | 9 | ` | \ |    | - | = | 8 |
 // | 7 | 5 | 3 | 1 |    | 0 | 2 | 4 | 6 |
 //         |   |   |    |   |   |
             bindings = <
 
-                 &kp N9      &kp GRAVE    &trans           &kp PLUS    &kp MINUS   &kp N8
+                 &kp N9      &kp GRAVE     &kp NUBS        &kp PLUS    &kp MINUS   &kp N8
 &mt LGUI N7 &mt LALT N5 &mt LCTL N3 &mt LSHIFT N1   &mt LSHIFT N0 &mt RCTL N2 &mt RALT N4 &mt RGUI N6
 
            &trans &trans   &trans &trans
@@ -71,13 +71,13 @@
         };
 
         nav_sym {
-//     |   |   |   |    | [ | ] |   |
+//     |   |   |   |    | [ | ] |RST|
 // | < | v | ^ | > |    | ' | # | ; | / |
 //         |   |   |    |   |   |
             bindings = <
 
-                 &kp N9      &kp GRAVE    &trans           &kp PLUS    &kp MINUS   &kp N8
-&mt LGUI N7 &mt LALT N5 &mt LCTL N3 &mt LSHIFT N1   &mt LSHIFT N0 &mt RCTL N2 &mt RALT N4 &mt RGUI N6
+                 &trans      &trans    &trans              &kp LBRC            &kp RBRC      &bt BT_CLR
+&mt LGUI LEFT &mt LALT DOWN &mt LCTL UP &mt LSHIFT RIGHT   &mt LSHIFT SQT &mt RCTL NUHS &mt RALT SEMI &mt RGUI SLASH
 
            &trans &trans   &trans &trans
 
