@@ -1,5 +1,10 @@
 #include <behaviors.dtsi>
+#include <dt-bindnigs/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+
+&mt {
+    tapping-term-ms = <200>;
+};
 
 &sl {
     release-after-ms = <350>;
@@ -76,7 +81,7 @@
 //         |   |   |    |   |   |
             bindings = <
 
-                 &trans      &trans    &trans              &kp LBRC            &kp RBRC      &bt BT_CLR
+                 &trans      &trans    &trans                     &kp LBRC     &kp RBRC      &bt BT_CLR
 &mt LGUI LEFT &mt LALT DOWN &mt LCTL UP &mt LSHIFT RIGHT   &mt LSHIFT SQT &mt RCTL NUHS &mt RALT SEMI &mt RGUI SLASH
 
            &trans &trans   &trans &trans
